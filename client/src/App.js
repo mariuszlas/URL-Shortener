@@ -1,8 +1,6 @@
-import './App.css';
+import React from 'react';
+import { Main } from './pages';
 
-function App() {
-    console.log(process.env.REACT_APP_API_URL);
-  return <h1>Hello world</h1>
-}
+function App() { return <Main /> }
 
 export default App;
