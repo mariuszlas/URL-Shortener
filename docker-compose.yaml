@@ -1,7 +1,7 @@
 version: '3'
 services:
     db:
-        container_name: countdown_dev_db
+        container_name: dev_db
         image: postgres:latest
         ports:
             - 5432:5432
