@@ -21,5 +21,5 @@ Try it out at [link to our website]
 ### Client
 * Navigate to `/client`
 * Run `npm install` to install dependencies
-* Run `npm start` to launch the dev server and visit `http://localhost:5000` in your web browser to open the React client
+* Run `npm start` to launch the dev server and visit `http://localhost:3000` in your web browser to open the React client
 * Run `npm test` to launch the test suites
