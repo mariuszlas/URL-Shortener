@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import copy from 'copy-to-clipboard';
 import './style.css';
 
 function Main() {
@@ -10,15 +11,21 @@ function Main() {
     async function handleSubmit(e) {
         e.preventDefault();
 
-        // try {
-        //     const res = await axios.post(`${process.env.REACT_APP_API_URL}`, { url: e.target.url.value });
-        //     const url = res.data; // ????
-        //     setShortUrl(url);
-        // } catch(err) {
-        //     console.log(err);
-        //     setError(true);
-        // }
-        // e.target.reset();
+        try {
+            const { data } = await axios.post(
+                `${process.env.REACT_APP_API_URL}`, { url: e.target.url.value }
+            );
+            setShortUrl(`${process.env.REACT_APP_API_URL}${data.shortcode}`);
+        } catch(err) {
+            console.log(err);
+            setError(true);
+        }
+        e.target.reset();
+    }
+
+    function copyToClipboard(e) {
+        e.preventDefault();
+        copy(shortUrl);
     }
 
     return (
@@ -32,7 +39,7 @@ function Main() {
                     your long, ugly URLs into short links.
                 </p>
 
-                <form role="shorten-url" onSubmit={e => handleSubmit(e)}>
+                <form onSubmit={e => handleSubmit(e)}>
                     <label htmlFor="url"></label>
                     <input type="url" id="url" placeholder="Enter your URL" required />
                     <label htmlFor="submit"></label>
@@ -42,7 +49,9 @@ function Main() {
                 {
                     shortUrl ?
                     <section>
-                        <p className="text-center">Here is your shortened URL:</p>
+                        <p className="text-center">Here is your shortened URL
+                            <button onClick={copyToClipboard}><i className="bi bi-clipboard"></i></button>
+                        </p>
                         <p className="text-center">{ shortUrl }</p>
                     </section>
                     : null
