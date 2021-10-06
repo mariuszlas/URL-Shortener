@@ -15,10 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from shortenit.views import shortenit_redirect_view, ShortenitCBView
+from shortenit.views import shortenit_redirect_view, UrlDetail
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('view-1/', shortenit_redirect_view),
-    path('view-2/',ShortenitCBView.as_view()),
+    path('<str:code>/', shortenit_redirect_view),
+    path('', UrlDetail.as_view()),
 ]
