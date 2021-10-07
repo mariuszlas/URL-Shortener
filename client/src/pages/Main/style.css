@@ -1,0 +1,30 @@
+.text-center {
+  text-align: center;
+}
+
+header {
+  margin: 2em 0 2em 0;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 100px;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 3em;
+}
+
+#url {
+  width: 300px;
+}
+
+button, #submit {
+    margin-left: 1.5em;
+    cursor: pointer;
+}
