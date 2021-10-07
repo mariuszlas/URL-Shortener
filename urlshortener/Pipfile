@@ -12,6 +12,7 @@ psycopg2 = "*"
 dj-database-url = "*"
 django-heroku = "*"
 python-dotenv = "*"
+whitenoise = "*"
 
 [dev-packages]
 pytest = "*"
