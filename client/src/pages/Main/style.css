@@ -23,3 +23,8 @@ footer {
 #url {
   width: 300px;
 }
+
+button, #submit {
+    margin-left: 1.5em;
+    cursor: pointer;
+}

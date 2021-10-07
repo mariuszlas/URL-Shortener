@@ -1,21 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.d53f7d05.chunk.css",
-    "main.js": "/static/js/main.39c7a4de.chunk.js",
-    "main.js.map": "/static/js/main.39c7a4de.chunk.js.map",
+    "main.css": "/static/css/main.2918422e.chunk.css",
+    "main.js": "/static/js/main.d87de0a8.chunk.js",
+    "main.js.map": "/static/js/main.d87de0a8.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.31d02deb.js",
     "runtime-main.js.map": "/static/js/runtime-main.31d02deb.js.map",
-    "static/js/2.19c5b519.chunk.js": "/static/js/2.19c5b519.chunk.js",
-    "static/js/2.19c5b519.chunk.js.map": "/static/js/2.19c5b519.chunk.js.map",
+    "static/js/2.28c8baf6.chunk.js": "/static/js/2.28c8baf6.chunk.js",
+    "static/js/2.28c8baf6.chunk.js.map": "/static/js/2.28c8baf6.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.d53f7d05.chunk.css.map": "/static/css/main.d53f7d05.chunk.css.map",
-    "static/js/2.19c5b519.chunk.js.LICENSE.txt": "/static/js/2.19c5b519.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/static/media/bullseye-gradient.cf58051b.svg"
+    "static/css/main.2918422e.chunk.css.map": "/static/css/main.2918422e.chunk.css.map",
+    "static/js/2.28c8baf6.chunk.js.LICENSE.txt": "/static/js/2.28c8baf6.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.31d02deb.js",
-    "static/js/2.19c5b519.chunk.js",
-    "static/css/main.d53f7d05.chunk.css",
-    "static/js/main.39c7a4de.chunk.js"
+    "static/js/2.28c8baf6.chunk.js",
+    "static/css/main.2918422e.chunk.css",
+    "static/js/main.d87de0a8.chunk.js"
   ]
 }
