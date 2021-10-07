@@ -15,6 +15,7 @@ function Main() {
             const { data } = await axios.post(
                 `${process.env.REACT_APP_API_URL}`, { url: e.target.url.value }
             );
+            console.log(data);
             setShortUrl(`${process.env.REACT_APP_API_URL}${data.shortcode}`);
         } catch(err) {
             console.log(err);
@@ -35,7 +36,7 @@ function Main() {
             </header>
 
             <main>
-                <p className="text-center">Shorten It! is a free service that allows you to shorten
+                <p className="text-center" role="banner">Shorten It! is a free service that allows you to shorten
                     your long, ugly URLs into short links.
                 </p>
 
@@ -52,7 +53,7 @@ function Main() {
                         <p className="text-center">Here is your shortened URL
                             <button onClick={copyToClipboard}><i className="bi bi-clipboard"></i></button>
                         </p>
-                        <p className="text-center">{ shortUrl }</p>
+                        <p role="contentinfo" className="text-center">{ shortUrl }</p>
                     </section>
                     : null
                 }
@@ -64,7 +65,7 @@ function Main() {
                 }
             </main>
 
-            <footer className="text-center">
+            <footer className="text-center" role="footer">
                 Created by Abigail McLeod-Peck & Mariusz Las
             </footer>
         </>
