@@ -2,7 +2,7 @@
 
 Shorten It! is a free service that allows you to shorten your long, ugly URLs into short links. The API is written in Python using the Django Rest Framework and the client is a React app.
 
-Try it out at [link to our website]
+Try it out at https://sh-it.netlify.app/
 
 ## Local Installation & Usage
 
